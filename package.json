@@ -1,0 +1,14 @@
+{
+  "name": "oi-mae",
+  "version": "1.0.0",
+  "description": "ola mundo electron",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "kavvata",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^25.5.0"
+  }
+}
