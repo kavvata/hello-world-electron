@@ -5,6 +5,9 @@ const createWindow = () => {
     const win = new BrowserWindow ({
         width: 600,
         height: 800,
+        webPreferences: {
+            preload: path.join(__dirname, 'preload.js')
+        }
     })
 
     win.loadFile('index.html')
@@ -12,4 +15,8 @@ const createWindow = () => {
 
 app.whenReady().then(() => {
     createWindow()
+})
+
+app.on('window-all-closed', () => {
+    if (process.platform !== 'darwin') app.quit()
 })
