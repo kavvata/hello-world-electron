@@ -1,0 +1,22 @@
+html {
+    background: white url("../img/starbackground.gif") repeat;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+}
+main {
+    max-width: 630px;
+    padding: 80px 7% 50px 7%;
+	background: cornsilk;
+	box-shadow: 0 0 0 5px MidnightBlue inset;
+}
+
+footer {
+    min-width: 630px;
+    padding: 50px 7% 50px 7%;
+	background: cornsilk;
+	box-shadow: 0 0 0 5px MidnightBlue inset;
+    text-align: center;
+}
